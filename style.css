@@ -1,0 +1,89 @@
+/* Umum */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.quiz-container {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Soal dan Jawaban */
+#question-container {
+  margin-bottom: 20px;
+}
+
+#answers {
+  display: flex;
+  flex-direction: column;  /* Mengubah tata letak menjadi vertikal */
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0;  /* Memberikan jarak antar tombol */
+  width: 80%;  /* Lebar tombol agar lebih rapi */
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Button saat soal selesai */
+.hide {
+  display: none;
+}
+
+/* Halaman Review */
+.review-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.review-item {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.correct {
+  color: #2ecc71;  /* Green for correct answers */
+}
+
+.wrong {
+  color: #e74c3c;  /* Red for wrong answers */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
